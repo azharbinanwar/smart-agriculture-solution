@@ -1,0 +1,140 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons> -->
+    <ion-title color="light">{{'Weather' |translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen  class="i-content">
+  <ion-grid class="i-grid" fixed>
+    <ion-row>
+      <ion-col size="6">
+        <ion-label>
+          <h1 class="i-h-city i-tx">{{city |translate}}</h1>
+          <h1 class="i-h-condition i-tx">{{weatherCondition |translate}}</h1>
+        </ion-label>
+      </ion-col>
+      <ion-col size="6">
+        <img class="i-img" [src]="'http://openweathermap.org/img/wn/'+weatherIcon+'@2x.png'" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <h1 class="i-heading-temp i-tx">{{temp |translate}}&deg;</h1>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed>
+    <ion-row >
+      <ion-col class="ion-no-padding" size="4">
+        <ion-card class="i-card-row_1 ion-text-center ion-no-padding">
+          <ion-item class="ion-text-center"  color="#87ceeb" lines="none">
+            <ion-label>
+              <ion-icon  class="i-icon" src="assets/icon/sunrise.svg"></ion-icon>
+              <p class="i-p i-tx">{{'Sunrise' |translate}}</p>
+              <p class="i-p-value i-tx">{{ sunrise*1000 | date: 'hh:mm a' }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="4">
+        <ion-card class="i-card-row_1 ion-text-center ion-no-padding">
+          <ion-item class="ion-text-center"  color="#87ceeb" lines="none">
+            <ion-label>
+              <ion-icon  class="i-icon" src="assets/icon/sunset.svg"></ion-icon>
+              <p class="i-p i-tx">{{'Sunset' |translate}}</p>
+              <p class="i-p-value i-tx">{{ sunset*1000 | date: 'hh:mm a' }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="4">
+        <ion-card class="i-card-row_1 ion-text-center ion-no-padding">
+          <ion-item class="ion-text-center"  color="#87ceeb" lines="none">
+            <ion-label>
+              <ion-icon  class="i-icon"  src="assets/icon/wind.svg"></ion-icon>
+              <p class="i-p i-tx">{{'Wind' |translate}}</p>
+              <p class="i-p-value i-tx">{{ windSpeed |translate }}km/h</p>
+            </ion-label>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col class="ion-no-padding" size="4">
+        <ion-card class="i-card-row_2 ion-text-center ion-no-padding">
+          <ion-item class="ion-text-center"  color="#87ceeb" lines="none">
+            <ion-label>
+              <ion-icon  class="i-icon" src="assets/icon/humidity.svg"></ion-icon>
+              <p class="i-p i-tx">{{'Humidity' | translate}}</p>
+              <p class="i-p-value i-tx">{{ humidity |translate }}%</p>
+            </ion-label>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="4">
+        <ion-card class="i-card-row_2 ion-text-center ion-no-padding">
+          <ion-item class="ion-text-center"  color="#87ceeb" lines="none">
+            <ion-label>
+              <ion-icon  class="i-icon" color="light" name="eye-outline"></ion-icon>
+              <p class="i-p i-tx">{{'Visibility' |translate}}</p>
+              <p class="i-p-value i-tx">{{ visibility |translate }}km</p>
+            </ion-label>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="4">
+        <ion-card class="i-card-row_2 ion-text-center ion-no-padding">
+          <ion-item class="ion-text-center"  color="#87ceeb" lines="none">
+            <ion-label>
+              <ion-icon  class="i-icon" src="assets/icon/pressure.svg"></ion-icon>
+              <p class="i-p i-tx">{{'Pressure' | translate}}</p>
+              <p class="i-p-value i-tx">{{ pressure }}mbar</p>
+            </ion-label>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <ion-card>
+    <ion-slides [options]="sliderConfig">
+      <ion-slide *ngFor="let data of [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="3">
+              <p>Label</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
+  </ion-card> -->
+
+    <ion-slides [options]="sliderConfig" class="ion-padding">
+      <ion-slide *ngFor="let data of forcastWeather">
+        <ion-grid fixed>
+          <ion-row class="i-row">
+            <ion-col size="4.5" >
+              <p class="i-fr-temp i-tx">{{data.temp | number : '1.0-0'}}&deg;</p>
+            </ion-col>
+            <ion-col  size="7.5">
+              <ion-label>
+                <p class="i-fr-p i-tx">{{data.dt*1000  | date : 'hh:mm a' }}</p>
+                <p class="i-fr-p i-tx">Sunrise: {{00}}</p>
+                <p class="i-fr-p i-tx">Sunset: {{00}}</p>
+              </ion-label>
+
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
+</ion-content>
+

@@ -1,0 +1,27 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Pesticides</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+ 
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{'Pesticides' | translate}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="search()">
+        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let data of pesticides" (click)="pesticideDetail(data.id)">
+    <ion-img class="i-img" src={{data.image_url[0]}}></ion-img>
+    <h1 class="i-title">{{data.company_name.slice(0, 45)}}...</h1>
+    <p class="i-des">{{data.des.slice(0, 100)}}...</p>
+  </ion-card>
+</ion-content>

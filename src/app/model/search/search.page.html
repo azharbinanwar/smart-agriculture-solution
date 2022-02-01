@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Search</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)]="searchQuery" (change)="search($event)" placeholder={{value}}></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="experts == value && data != null">
+  <ion-card *ngFor="let data of data">
+    <ion-item line="full">
+      <ion-avatar *ngIf="data.profile_image != null" class="i-avator" slot="start">
+        <img src={{data.profile_image}} class="profile-pict-img">
+      </ion-avatar>
+      <ion-avatar *ngIf="data.profile_image == null" class="i-avator-empty" slot="start">
+        <ion-icon class="i-icon-empty" name="person-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2 class="i-h-name">{{data.name}}</h2>
+        <h3 class="i-h-c">{{data.certification}}</h3>
+        <p class="i-h-ex">Experience: {{data.experience}}</p>
+      </ion-label>
+    </ion-item>
+    <ion-row class="i-row-icon ion-padding">
+      <ion-col class="ion-no-padding" size="4">
+        <ion-button expand="block" fill="clear" (click)="contactToExpert('phone', data.phone_no)">
+          <ion-icon name="call-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="4">
+        <ion-button expand="block" fill="clear" (click)="contactToExpert('chat', data.phone_no)">
+          <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="4">
+        <a href={{apiWhatsApp.concat(data.whatsapp_no)}}>
+        <ion-button expand="block" fill="clear" >
+          <ion-icon src="assets/others/logo-whatsapp.svg"></ion-icon>
+        </ion-button>
+      </a>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</div>
+<div *ngIf="pesticides == value && data !== null">
+  <ion-card *ngFor="let data of data" (click)="pesticideDetail(data.id)">
+    <ion-img class="i-img" src={{data.image_url[0]}}></ion-img>
+    <h1 class="i-title">{{data.company_name.slice(0, 45)}}...</h1>
+    <p class="i-des">{{data.des.slice(0, 100)}}...</p>
+  </ion-card>
+</div>
+<div *ngIf="treatment == value && data !== null">
+  <ion-card *ngFor="let data of data" (click)="treatmentDetail(data.id)">
+    <ion-img src={{data.image_url[0]}}></ion-img>
+    <h1 class="ion-padding i-title">{{data.title.slice(0, 45)}}...</h1>
+    <p class="ion-padding i-des">{{data.des.slice(0, 100)}}...</p>
+  </ion-card>
+
+</div>
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header  style="z-index: 0;">
+  <ion-toolbar>
+    <ion-title>{{'Authentication' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<super-tabs>
+  <super-tabs-toolbar slot="top" color="light">
+    <super-tab-button>
+      <ion-label color="dark"> {{'Log In' | translate}}
+      </ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-label color="dark">
+        {{'Sign In' | translate}}
+      </ion-label>
+    </super-tab-button>
+  </super-tabs-toolbar>
+
+  <super-tabs-container>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="loginPage"></ion-nav>
+      </ion-content>
+    </super-tab>
+    <super-tab>
+      <ion-content>
+        <ion-nav [root]="signinPage"></ion-nav>
+      </ion-content>
+    </super-tab>
+  </super-tabs-container>
+</super-tabs>

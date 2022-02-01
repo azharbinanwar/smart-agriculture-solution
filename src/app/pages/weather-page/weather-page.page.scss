@@ -1,0 +1,153 @@
+ion-toolbar {
+  --background: transparent;
+  // --ion-color-base: transparent !important;
+}
+.i-content {
+  --background: linear-gradient(
+    180deg,
+    rgba(11, 70, 158, 1) 0%,
+    rgb(59, 165, 184) 100%
+  ) !important;
+  .i-grid {
+    margin-top: 40px;
+
+    .i-h-city {
+      text-align: center;
+      font-weight: 700;
+      font-size: 25px;
+    }
+    .i-h-condition {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .i-heading-temp {
+      text-align: center;
+      font-weight: 100;
+      font-size: 60px;
+    }
+    .i-img {
+      text-align: center;
+      margin: auto;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+    .i-p-type {
+      font-size: 20px;
+    }
+  }
+  .i-card-row_1 {
+    --background: linear-gradient(
+      180deg,
+      rgba(37, 122, 172, 1) 0%,
+      rgb(43, 133, 173) 100%
+    ) !important;
+    .i-icon {
+      fill: var(--ion-color-light);
+      height: 25px;
+      width: 25px;
+    }
+    .i-p {
+      color: white;
+      font-size: 12px;
+    }
+    .i-p-value {
+      font-size: 12px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+  .i-card-row_2 {
+    --background: linear-gradient(
+      180deg,
+      rgba(46, 139, 177, 1) 0%,
+      rgb(53, 153, 181) 100%
+    ) !important;
+    .i-icon {
+      fill: var(--ion-color-light);
+      height: 25px;
+      width: 25px;
+    }
+    .i-p {
+      color: white;
+      font-size: 12px;
+    }
+    .i-p-value {
+      font-size: 12px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  .i-row {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 4px;
+    border: 1px solid var(--ion-color-light);
+
+    // .i-col {
+    //   border-radius: 16px;
+    //   padding-top: 8px;
+
+    .i-fr-temp {
+      font-size: 63px;
+      position: absolute;
+      top: 4px;
+      bottom: 0px;
+      margin: 0px;
+      left: 9px;
+      right: 0;
+    }
+    .i-fr-p {
+      text-align: left;
+      color: white;
+    }
+    .i-avatar {
+      height: 60px;
+      width: 100%;
+      position: relative;
+
+      .i-img {
+        height: 60px;
+        width: 60px;
+      }
+
+      .i-avatar-profile {
+        height: 60px;
+        width: 100%;
+        margin: auto;
+        position: absolute;
+
+        .i-icon-profile {
+          height: 45px;
+          width: 45px;
+          margin: auto;
+          background: var(--ion-color-primary);
+          padding: 7px;
+          fill: var(--ion-color-light);
+          border-radius: 51px;
+        }
+      }
+    }
+
+    .i-p-userName {
+      margin-top: 8px;
+      font-size: 12px;
+      margin-bottom: 0px;
+      color: var(--ion-color-dark);
+    }
+
+    .i-p-userService {
+      margin-top: 0px;
+      font-size: 10px;
+    }
+  }
+}
+// }
+.i-tx {
+  color: white;
+}

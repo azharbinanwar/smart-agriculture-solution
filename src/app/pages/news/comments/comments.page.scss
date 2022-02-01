@@ -1,0 +1,28 @@
+.i-item-txa {
+  border: 1px solid black;
+}
+.i-button-post {
+  position: absolute;
+  right: 20px;
+  top: 125px;
+}
+.i-div-comment {
+  margin-top: 60px;
+  .i-div-comment-all {
+    border: 0.5px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    .i-comment {
+      margin-top: 3px;
+      margin-bottom: 3px;
+      color: black;
+
+    }
+    .i-date {
+      margin: 0px;
+      text-align: right;
+      font-size: 12px;
+    }
+  }
+}

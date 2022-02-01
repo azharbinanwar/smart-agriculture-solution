@@ -1,0 +1,23 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>intro</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-text color="primary" class="ion-text-center">
+    <h1> <b>{{'Welcome to Smart Agriculture Solution' | translate}}</b></h1>
+  </ion-text>
+  <div class="i-grid">
+    <ion-slides pager="true" class="i-slides" style="height: 100%;">
+      <ion-slide *ngFor="let slide of introList">
+        <ion-col size="12">
+          <img class="i-img-intro" src={{slide.image}}>
+          <h1 class="i-tx i-text">{{ slide.heading | translate  }}</h1>
+          <p class="i-tx">{{ slide.sub_heading | translate }}</p>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <ion-button class="i-button-skip" color="primary" (click)="goToNext()">{{'Skip' | translate }}</ion-button>
+</ion-content>

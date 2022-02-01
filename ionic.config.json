@@ -1,0 +1,7 @@
+{
+  "name": "smart-agriculture-solution",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

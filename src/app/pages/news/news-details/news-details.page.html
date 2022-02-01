@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'News Details' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="data == null">
+    <ion-img src="{{imageurl}}"></ion-img>
+  </div>
+  <div class="ion-padding">
+    <ion-row>
+      <ion-col size="6">
+        <p class="i-date">{{date | date : 'dd MMM yyyy, hh:mm a'}}</p>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1">
+        <ion-buttons (click)="toggleLike(uid, likes, newsId)">
+          <ion-button>
+            <ion-icon slot="icon-only" [name]="likes.indexOf(uid) == -1? 'heart-outline' : 'heart'"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col size="1.5" (click)="toggleLike(uid, likes, newsId)">
+        <p class="i-tx">{{likes.length}}</p>
+      </ion-col>
+      <ion-col size="1">
+        <ion-buttons (click)="commontPage(newsId)">
+          <ion-button>
+            <ion-icon slot="icon-only" name="chatbox-ellipses-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col size="1.5" (click)="commontPage(newsId)">
+        <p class="i-tx">{{comments.length}}</p>
+      </ion-col>
+    </ion-row>
+    <h3 class="i-title">{{title | translate}}</h3>
+    <p class="i-des">{{des |translate}}</p>
+  </div>
+</ion-content>

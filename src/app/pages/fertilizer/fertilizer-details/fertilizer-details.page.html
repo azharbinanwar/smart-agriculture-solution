@@ -1,0 +1,38 @@
+ <ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'Fertilizer Details' |translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" *ngIf="imageUrl != null">
+    <ion-slide *ngFor="let image of imageUrl">
+      <ion-img class="i-img" src={{image}}></ion-img>
+    </ion-slide>
+  </ion-slides>
+  <!-- <ion-grid class="i-grid">
+    <ion-row>
+      <ion-col  class="ion-no-padding" size="2.5"></ion-col>
+      <ion-col class="ion-no-padding" size="1">
+        <ion-icon class="i-icon" name="person-outline"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="1"><p class="i-tx">{{0}}</p></ion-col>
+      <ion-col class="ion-no-padding" size="3"></ion-col>
+      <ion-col class="ion-no-padding" size="1">
+        <ion-icon class="i-icon" name="chatbox-outline"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="1"><p class="i-tx">{{0}}</p></ion-col>
+      <ion-col class="ion-no-padding" size="2.5"></ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <div class="i-div ion-padding">
+    <h1 class="i-h">{{'companyName' |translate}}</h1>
+    <h2 class="i-h">Name:{{name |translate}}</h2>
+    <p>Price: <Strong>{{price |translate}}</Strong></p>
+    <p class="i-p">{{des |translate}}</p>
+  </div>
+
+</ion-content>

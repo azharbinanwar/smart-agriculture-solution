@@ -1,0 +1,47 @@
+.i-content {
+  .i-grid {
+    padding-top: 35px;
+    .i-img {
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      margin: auto;
+      left: 0;
+      right: 0px;
+    }
+    .div-fields {
+      margin-top: 100px;
+      .i-input {
+        border-radius: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 48px;
+        box-shadow: 0px 1px 7px -4px black;
+        .i-field {
+          margin-left: 12px;
+        }
+        
+      }
+      .i-label-forget {
+        text-align: right;
+        padding-right: 20px;
+        font-size: 12px;
+      }
+      .i-button {
+        border-radius: 25px;
+         text-align   : center;
+         margin-top   : 10px;
+         margin-bottom: 10px;
+         height       : 48px;
+     }
+    }
+  }
+}
+.error-message {
+  color: var(--ion-color-danger);
+  padding-left: 20px;
+  font-size: 10px;
+  padding-right: 20px;
+}

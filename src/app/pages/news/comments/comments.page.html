@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{'Comments' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div>
+    <ion-item class="i-item-txa" lines="none">
+      <ion-textarea
+        rows="4"
+        cols="20"
+        placeholder="Comment here..."
+        [(ngModel)]="commentText"
+      ></ion-textarea>
+    </ion-item>
+    <ion-button
+      [disabled]="commentText == null"
+      class="i-button-post"
+      (click)="postComment(newsId)"
+    >
+     {{' Post' | translate}}
+    </ion-button>
+  </div>
+  <div class="i-div-comment">
+    <div *ngFor="let data of comments" class="i-div-comment-all">
+      <p class="i-comment">{{data.comment_text | translate}}</p>
+      <p class="i-date">{{data.date_posted.seconds*1000 | date: 'dd MMM yyyy, hh:mm:a'}}</p>
+    </div>
+  </div>
+</ion-content>

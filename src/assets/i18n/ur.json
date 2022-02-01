@@ -1,0 +1,128 @@
+{
+    "Home": "ہوم",
+    "Settings": "ترتیبات",
+    "Language": "زبان",
+    "Urdu": "اردو",
+    "English": "انگریزی",
+    "// Intro Page": "",
+    "Welcome to Smart Agriculture Solution": "اسمارٹ زراعت سلوشن میں خوش آمدید",
+    "Weather and Forcasting": "موسم اور کاسٹنگ",
+    "Review Weather and  daily and  hourly forcasting": "موسم اور روزانہ اور فی گھنٹہ کاٹنے کا جائزہ لیں",
+    "Review Fertilizer": "کھاد کا جائزہ لیں",
+    "Review fertilizer search experts and ask questions or suggest to others": "کھاد تلاش کرنے والے ماہرین کا جائزہ لیں اور سوالات پوچھیں یا دوسروں کو مشورہ دیں",
+    "Contact to Experts": "ماہرین سے رابطہ کریں",
+    "Search experts and call, message & contact through whatsapp and mail": "ماہرین تلاش کریں اور واٹس ایپ اور میل کے ذریعے کال ، میسج اور رابطہ کریں",
+    "Get News": "خبریں حاصل کریں",
+    "Receive news about agriculture and weather": "زراعت اور موسم کے بارے میں خبریں موصول کریں",
+    "Skip": "چھوڑ دو",
+
+    "//Auth page":"",
+    "Authentication": "توثیق",
+    "Log In": "لاگ ان کریں",
+    "Sign In": "سائن ان",
+
+
+    "//sign-in-page":"",
+    "email" : "ای میل",
+    "password" : "پاس ورڈ",
+    "Forget Password" :"پاس ورڈ بھول جانا",
+    "Email is required." : "ای میل کی ضرورت ہے",
+    "Please enter a valid email." : "ایک درست ای میل درج کریں",
+    "Password is required." : "پاس ورڈ کی ضرورت ہے",
+    "Password must be at least 8 characters long." : "پاس ورڈ کم از کم 8 حرف لمبا ہونا چاہئے",
+    "Your password must contain at least one uppercase, one lowercase, and one number and 8 to 25 letters o." : "آپ کے پاس ورڈ میں کم از کم ایک بڑے ، ایک چھوٹے ، اور ایک نمبر اور 8 سے 25 حرف شامل ہوں",
+    
+    
+    "//signup":"",
+    "Username is required.":"صارف نام ضروری ہے" ,
+    "Username must be at least 3 characters long.":"صارف نام کم از کم 3 حرف لمبا ہونا چاہئے",
+     "User name must contain only English letters.":"صارف کے نام میں صرف انگریزی حرف ہونے چاہئے" ,
+     "Phone number must contain 11 digits.":"فون نمبر میں 11 ہندسوں کا ہونا ضروری ہے",
+     "Invalid phone numbber.":"غلط فون نمبر",
+     "Confirm password is required.":"تصدیق پاس ورڈ کی ضرورت ہے",
+     "Password mismatch.":"پاس ورڈ سے میل کھاتا ہے",
+     "User Base Location required is required.":"یوزر بیس مقام درکار ہے",
+     "You must accept terms and conditions.":"آپ کو شرائط و ضوابط قبول کرنا ہوں گے",
+     "I accept terms and conditions":"میں شرائط و ضوابط قبول کرتا ہوں",
+     "address":"پتہ",
+     "phone number":"فون نمبر",
+     "confirm password":"تصدیقی پاس ورڈ",
+     "Sign Up":"سائن اپ",
+
+     "//experts":"",
+     "name":"نام",
+     "certification":"تصدیق",
+     "experience":"تجربہ",
+     "Experts":"ماہرین",
+
+     "//fertilizer-page":"",
+     "Fertilizer":"کھاد",
+     "Fertilizer Details":"کھاد کی تفصیلات",
+     "companyName":"کمپنی نام",
+     "price":"قیمت",
+     "des":"des",
+
+
+     "//news-page":"",
+     "Comments":"تبصرے",
+     " Post":" پوسٹ",
+     "comment_text":"کمنٹ_ٹیکسٹ",
+     "News Details":"خبروں کی تفصیلات",
+     "title":"عنوان",
+     "News":"خبریں",
+
+
+     "//Pesticides-page":"",
+     "Pesticides":"کیڑے مار دوا",
+     "Pesticide Details":" کیڑے مار دوا سے متعلق تفصیلات ",
+     "Pests":"کیڑوں",
+     "pest":"کیڑے",
+     "Dosage":"خوراک",
+     "dosage":"خوراک",
+     "Target Crops":"ہدف کی فصلیں",
+     "crop":"فصلیں",
+     
+     
+     "//Profile-page":"",
+     "Profile":"پروفائل",
+     "Sign Out":"باہر جائیں",
+     "phoneNumber":"باہر جائیں",
+     
+     
+     
+     "//Settings-page":"",
+     " Settings":"ترتیبات",
+
+
+     "//Treatment-page":"",
+     "Treatment":"علاج",
+     "Treatment Details":"علاج کی تفصیلات",
+
+
+
+     "//Weather-page":"",
+     "Weather":"موسم",
+
+     "//About-us":"",
+      "About Us":"ہمارے بارے میں",
+      "We are here to change farmer lifestyle.":"ہم یہاں کسانوں کے طرز زندگی کو تبدیل کرنے کے لئے آئے ہیں۔",
+      "A new way to help the farmer being familiar with latest news,weather and Fertilizers.":"تازہ ترین خبروں ، موسم اور کھادوں سے واقف ہونے سے کسان کی مدد کرنے کا ایک نیا طریقہ۔",
+      "Smart Agriculture Solution":"اسمارٹ زراعت سلوشن",
+      "is a community platform that help and give the agriculture information solution,updated methods and ways about agricultural problems.":"یہ ایک ایسا کمیونٹی پلیٹ فارم ہے جو زراعت سے متعلق معلومات کے حل ، زرعی مسائل سے متعلق جدید طریقوں اور طریقوں کی مدد اور مدد کرتا ہے۔",
+      "Traditional methods that are currently being followed in Pakistan have lot of drawbacks in it. Identifying those loopholes we are revolutionizing the way how farmer solve their agriculture problems. We are providing an innovative solution to the problems that almost every farmer faces on day to day basis.":"روایتی طریقوں کا جن کی پیروی اس وقت پاکستان میں کی جارہی ہے اس میں اس میں بہت ساری خرابیاں ہیں۔ ان خامیوں کی نشاندہی کرتے ہوئے ہم اس انداز میں انقلاب برپا کر رہے ہیں کہ کسان اپنی زراعت کے مسائل کیسے حل کرتے ہیں۔ ہم ان مسائل کا ایک جدید حل فراہم کر رہے ہیں جس کا سامنا تقریبا. ہر کسان کو روز بروز ہوتا ہے۔",
+      "Our mission is to enable Pakistan Agriculture use new agri technologies through which farmer can profit. In doing so we hope to have positive impact on Agri Life Style.":"ہمارا مشن پاکستان زراعت کو نئی زرعی ٹیکنالوجیز کے استعمال کے قابل بنانا ہے جس کے ذریعے کسان فائدہ اٹھاسکتے ہیں۔ ایسا کرنے سے ہمیں امید ہے کہ ایگری لائف اسٹائل پر مثبت اثرات مرتب ہوں گے۔",
+      "Our vision is to connect, through latest Information Communication Technologies, all stakeholders of Pakistan’s Agronomical enterprise for optimal exchange of information and knowledge for better profits.":"ہمارا وژن بہتر معلومات کے ل information معلومات اور علم کے زیادہ سے زیادہ تبادلے کے لئے جدید ترین انفارمیشن کمیونیکیشن ٹیکنالوجیز کے ذریعے ، پاکستان کے زرعی انٹرپرائز کے تمام اسٹیک ہولڈرز کو جوڑنا ہے۔" ,
+
+
+      "//Contact Us":"",
+      "Contact Us":"ہم سے رابطہ کریں",
+      "WE’D LOVE TO HELP YOU IN EMAIL OR VIA CALL":"ہم آپ کو ای میل یا کال کے ذریعے آپ کی مدد کرنا چاہتے ہیں",
+      "is helping thousands of farmer to solve their agriculture problems.Our farmer support team and experts are available from 09:00 am to 05:00 pm (monday to friday),we are passionate about our community platform as well as our members and it shows in the quality of service that we provide. We are always happy to help you in finding the best solutions for all your needs. If you have any question about our platform or services contact our support team and experts.":"ہزاروں کسانوں کو زراعت کے مسائل حل کرنے میں مدد فراہم کررہے ہیں۔ ہماری کسان سپورٹ ٹیم اور ماہرین صبح 9 بجے سے شام 05:00 بجے تک (پیر سے جمعہ جمعہ) دستیاب ہیں ، ہم اپنے کمیونٹی کے پلیٹ فارم کے ساتھ ساتھ اپنے ممبروں کے بارے میں بھی جذباتی ہیں اور اس سے ظاہر ہوتا ہے ہم جو خدمت فراہم کرتے ہیں اس کے معیار میں۔ ہم آپ کی تمام ضروریات کے لئے بہترین حل تلاش کرنے میں آپ کی مدد کرنے میں ہمیشہ خوش ہیں۔ اگر آپ کو ہمارے پلیٹ فارم یا خدمات کے بارے میں کوئی سوال ہے تو ہماری مددگار ٹیم اور ماہرین سے رابطہ کریں۔",
+      "Email us using the contact form or call us.":"رابطہ فارم کا استعمال کرتے ہوئے ہمیں ای میل کریں یا ہمیں کال کریں۔"
+
+
+
+
+
+    }
+    

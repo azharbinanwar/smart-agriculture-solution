@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{'Home' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="i-content">
+  <ion-card class="i-card" [routerLink]="['/weather-page']">
+    <ion-item color="#87ceeb" lines="none">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="5">
+            <p class="i-p-temp-unit temp">C</p>
+            <h1 class="i-heading temp">{{temp}}°</h1>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h1 class="temp">{{city}}</h1>
+              <p class="temp">{{weatherCondition}}</p>
+              <p class="temp">Wind speed: {{windSpeed}} km/h</p>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <!-- <ion-row>
+      <ion-col size="4">
+        <h1 class="i-heading-temp">{{temp}}</h1>
+      </ion-col>
+      <ion-col size="8">
+        <ion-img class="i-img" src="assets/icon/favicon.png"></ion-img>
+        <h1 class="i-heading-location">{{city}}, Pakistan</h1>
+      </ion-col>
+    </ion-row> -->
+  </ion-card>
+  <!-- [routerLink]="['/news-page'] -->
+  <!-- <ion-card [routerLink]="['/treatment-details']">
+    <ion-grid class="i-grid-news" fixed>
+      <ion-row>
+        <ion-col size="12">
+          <h1 class="i-heading-news">
+            {{newHeading.slice(0, 45)}}...
+          </h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <p class="i-p-news">
+            {{desNews.slice(0, 300)}}...
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <p class="i-p-date">2020-304-334</p>
+    <ion-img src="assets/green.jpg"></ion-img>
+  </ion-card> -->
+
+  <ion-label class="ion-padding">Experts</ion-label>
+  <ion-slides pager="true">
+   
+    <ion-slide *ngFor="let data of epxertsData">
+      <ion-card >
+        <ion-item line="full">
+          <ion-avatar *ngIf="data.profile_image != null" class="i-avator" slot="start">
+            <img src={{data.profile_image}} class="profile-pict-img">
+          </ion-avatar>
+          <ion-avatar *ngIf="data.profile_image == null" class="i-avator-empty" slot="start">
+            <ion-icon class="i-icon-empty" name="person-outline"></ion-icon>
+          </ion-avatar>
+          <ion-label>
+            <h2 class="i-h-name">{{data.name}}</h2>
+            <h3 class="i-h-c">{{data.certification}}</h3>
+            <p class="i-h-ex">Experience: {{data.experience }}</p>
+          </ion-label>
+        </ion-item>
+        <ion-row class="i-row-icon ion-padding">
+          <ion-col class="ion-no-padding" size="4">
+            <ion-button expand="block" fill="clear" (click)="contactToExpert('phone', data.phone_no)">
+              <ion-icon name="call-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col class="ion-no-padding" size="4">
+            <a href={{mailTo.concat(data.mail)}}>
+            <ion-button expand="block" fill="clear" >
+              <ion-icon  color="primary" name="mail-outline"></ion-icon>
+            </ion-button>
+          </a>
+          </ion-col>
+          <ion-col class="ion-no-padding" size="4">
+            <a href={{apiWhatsApp.concat(data.whatsapp_no)}}>
+            <ion-button expand="block" fill="clear" >
+              <ion-icon src="assets/others/logo-whatsapp.svg"></ion-icon>
+            </ion-button>
+          </a>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+
+  <ion-label class="ion-padding">News</ion-label>
+  <ion-card *ngIf="data != null" (click)="onGoToNewsSinglePage(data.id)">
+    <ion-grid class="i-grid-news" >
+      <ion-row>
+        <ion-col size="12">
+          <h1 class="i-heading-news">
+            {{ sliceTitle(data.title, data.id) }}...
+          </h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <p class="i-p-news">
+            {{sliceDes(data.des)}}...
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <p class="i-p-date">{{ data.datecreated.seconds*1000 | date }}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-img src={{data.imageurl}}></ion-img>
+  </ion-card>
+
+  
+</ion-content>

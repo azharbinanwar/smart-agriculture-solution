@@ -1,0 +1,22 @@
+.i-grid-news {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    margin: 10px;
+    background-color: rgba(0,0,0, 0.4);
+    bottom: 0;
+
+    .i-heading-news {
+      margin: 0;
+    }
+    .i-p-news {
+      margin: 0;
+      margin-top: 10px;
+    }
+  }
+  .i-p-date {
+    text-align: end;
+    color: white;
+    font-size: 15px;
+  }

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="primary" >
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'Pesticide Details' |translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" *ngIf="imageUrl != null">
+    <ion-slide *ngFor="let image of imageUrl">
+      <ion-img class="i-img" src={{image}}></ion-img>
+    </ion-slide>
+  </ion-slides>
+  <div class="i-div ion-padding">
+    <h1 class="i-h ">{{companyName}}</h1>
+    <h2 class="i-h">Name:{{name}}</h2>
+    <p>Price: <Strong>{{price}}</Strong></p>
+    
+    <p class="ion-no-padding i-h-l">{{'Pests' |translate}}:</p>
+    <ion-row class="ion-no-padding">
+        <div *ngFor="let pest of pests">
+          <p class="i-p-l">{{'pest' |translate}}</p>
+      </div>
+    </ion-row>
+ <p class="ion-no-padding i-h-l">{{'Dosage' |translate}}:</p>
+    <ion-row class="ion-no-padding">
+        <div *ngFor="let dosage of dosage">
+          <p class="i-p-l">{{'dosage' | translate}}</p>
+      </div>
+    </ion-row>
+    <p class="ion-no-padding i-h-l">{{'Target Crops'|translate}}:</p>
+    <ion-row class="ion-no-padding">
+        <div *ngFor="let crop of targetCrops">
+          <p class="i-p-l">{{'crop' | translate}}</p>
+      </div>
+    </ion-row>
+
+    <p class="i-p">{{des}}</p>
+  </div>
+</ion-content>

@@ -1,0 +1,151 @@
+{
+    "Home": "Home",
+    "Settings": "Settings",
+    "Language": "Language",
+    "Urdu": "Urdu",
+    "English": "English",
+    "// Intro Page": "",
+    "Welcome to Smart Agriculture Solution": "Welcome to Smart Agriculture Solution",
+    "Weather and Forcasting": "Weather and Forcasting",
+    "Review Weather and  daily and  hourly forcasting": "Review Weather and  daily and  hourly forcasting",
+    
+    
+    "Review Fertilizer": "Review Fertilizer",
+    "Review fertilizer search experts and ask questions or suggest to others": "Review fertilizer search experts and ask questions or suggest to others",
+    "Contact to Experts": "Contact to Experts",
+    "Search experts and call, message & contact through whatsapp and mail": "Search experts and call, message & contact through whatsapp and mail",
+    "Get News": "Get News",
+    "Receive news about agriculture and weather": "Receive news about agriculture and weather",
+    "Skip": "Skip",
+
+    "//Auth page":"",
+    "Authentication": "Authentication",
+    "Log In": "Log In",
+    "Sign In": "Sign In",
+
+
+    "//sign-in-page":"",
+    "password" : "password",
+    "Forget Password." :"Forget Password.",
+    "Email is required." : "Email is required.",
+    "Please enter a valid email." : "Please enter a valid email.",
+    "Password is required." : "Password is required.",
+    "Password must be at least 8 characters long." : "Password must be at least 8 characters long.",
+    "Your password must contain at least one uppercase, one lowercase, and one number and 8 to 25 letters o." : "Your password must contain at least one uppercase, one lowercase, and one number and 8 to 25 letters o.",
+    
+    
+    "//signup-page":"",
+    "Username is required.":"Username is required." ,
+    "Username must be at least 3 characters long.":"Username must be at least 3 characters long.",
+     "User name must contain only English letters.":"User name must contain only English letters.",
+     "'Email is required.":"'Email is required.",
+     "Phone number must contain 11 digits.":"Phone number must contain 11 digits.",
+     "Invalid phone numbber.":"Invalid phone numbber.",
+     "Confirm password is required.":"Confirm password is required.",
+     "Password mismatch.":"Password mismatch.",
+     "User Base Location required is required.":"User Base Location required is required.",
+     "You must accept terms and conditions.":"You must accept terms and conditions.",
+     "I accept terms and conditions":"I accept terms and conditions",
+     "address":"address",
+     "phone number":"phone number",
+     "confirm password":"confrim password",
+     "Sign Up":"Sign Up",
+
+
+
+     "//experts-page":"",
+     "name":"name",
+     "certification":"certification",
+     "experience":"experience",
+     "Experts":"Experts",
+
+     "//fertilizer-page":"",
+     "Fertilizer":"Fertilizer",
+     "Fertilizer Details":"Fertilizer Details",
+     "companyName":"companyName",
+     "price":"price",
+     "des":"des",
+
+
+     "//news-page":"",
+     "Comments":"Comments",
+     " Post":" Post",
+     "comment_text":"comment_text",
+     "News Details":"News Details",
+     "title":"title",
+     "News":"News",
+
+
+     "//Pesticides-page":"",
+     "Pesticides":"Pesticides",
+     "Pesticide Details":"Pesticide Details",
+     "Pests":"Pests",
+     "pest":"pest",
+     "Dosage":"Dosage",
+     "dosage":"dosage",
+     "Target Crops":"Target Crops",
+     "crop":"crop",
+     
+     
+     "//Profile-page":"",
+     "Profile":"Profile",
+     "email":"email",
+     "Sign Out":"Sign Out",
+     "phoneNumber":"phoneNumber",
+     
+     
+     
+     "//Settings-page":"",
+     " Settings":"Settings",
+
+
+     "//Treatment-page":"",
+     "Treatment":"Treatment",
+     "Treatment Details":"Treatment Details",
+
+
+
+     "//About-us":"",
+      "About Us":"About Us",
+      "We are here to change farmer lifestyle":"We are here to change farmer lifestyle",
+      "A new way to help the farmer being familiar with latest news,weather and Fertilizers.":"A new way to help the farmer being familiar with latest news,weather and Fertilizers.",
+      "Smart Agriculture Solution":"Smart Agriculture Solution",
+      "is a community platform that help and give the agriculture information solution,updated methods and ways about agricultural problems.":"is a community platform that help and give the agriculture information solution,updated methods and ways about agricultural problems.",
+      "Traditional methods that are currently being followed in Pakistan have lot of drawbacks in it. Identifying those loopholes we are revolutionizing the way how farmer solve their agriculture problems. We are providing an innovative solution to the problems that almost every farmer faces on day to day basis.":"Traditional methods that are currently being followed in Pakistan have lot of drawbacks in it. Identifying those loopholes we are revolutionizing the way how farmer solve their agriculture problems. We are providing an innovative solution to the problems that almost every farmer faces on day to day basis.",
+      "Our mission is to enable Pakistan Agriculture use new agri technologies through which farmer can profit. In doing so we hope to have positive impact on Agri Life Style.":"Our mission is to enable Pakistan Agriculture use new agri technologies through which farmer can profit. In doing so we hope to have positive impact on Agri Life Style.",
+      "Our vision is to connect, through latest Information Communication Technologies, all stakeholders of Pakistan’s Agronomical enterprise for optimal exchange of information and knowledge for better profits.":"Our vision is to connect, through latest Information Communication Technologies, all stakeholders of Pakistan’s Agronomical enterprise for optimal exchange of information and knowledge for better profits.",
+      
+
+
+     "//Contact Us":"",
+     "Contact Us":"Contact Us",
+     "WE’D LOVE TO HELP YOU IN EMAIL OR VIA CALL":"WE’D LOVE TO HELP YOU IN EMAIL OR VIA CALL",
+     "is helping thousands of farmer to solve their agriculture problems.Our farmer support team and experts are available from 09:00 am to 05:00 pm (monday to friday),we are passionate about our community platform as well as our members and it shows in the quality of service that we provide. We are always happy to help you in finding the best solutions for all your needs. If you have any question about our platform or services contact our support team and experts.":"is helping thousands of farmer to solve their agriculture problems.Our farmer support team and experts are available from 09:00 am to 05:00 pm (monday to friday),we are passionate about our community platform as well as our members and it shows in the quality of service that we provide. We are always happy to help you in finding the best solutions for all your needs. If you have any question about our platform or services contact our support team and experts.",
+     "Email us using the contact form or call us.":"Email us using the contact form or call us.",
+
+
+
+
+
+
+
+
+
+
+     "//Weather-page":"",
+     "Weather":"Weather",
+     "city":"city",
+     "weatherCondition":"weatherCondition",
+     "temp":"temp",
+     "Sunrise":"Sunrise",
+     "Sunset":"Sunset",
+     "Wind":"Wind",
+     "windSpeed":"windSpeed",
+     "Humidity":"Humidity",
+     "humidity":"humidity",
+     "Visibility":"Visibility",
+     "visibility":"visibility",
+     "Pressure":"Pressure",
+     "":""
+    
+}

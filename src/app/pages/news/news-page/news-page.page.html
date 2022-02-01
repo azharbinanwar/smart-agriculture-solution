@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary" >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+    <ion-title>{{'News' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let data of news" (click)="onGoToNewsSinglePage(data.id)">
+    <ion-grid class="i-grid-news" >
+      <ion-row>
+        <ion-col size="12">
+          <h1 class="i-heading-news">
+            {{ sliceTitle(data.title, data.id) }}...
+          </h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <p class="i-p-news">
+            {{sliceDes(data.des)}}...
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <p class="i-p-date">{{ data.datecreated.seconds*1000 | date }}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-img src={{data.imageurl}}></ion-img>
+  </ion-card>
+</ion-content>
+
